@@ -3,21 +3,25 @@ var kittens = ["Milo", "Otis", "Garfield"]
 
 function destructivelyAppendKitten(name) {
   kittens.push(name)
+  //.push adds element to beg. of array
   return kittens
 }
 
 function destructivelyPrependKitten(name) {
   kittens.unshift(name)
+  //.unshift adds element to end of array
   return kittens
   }
 
 function destructivelyRemoveLastKitten(name){
   kittens.pop()
+  //.pop removes element from beg. of array
   return kittens
 }
 
 function destructivelyRemoveFirstKitten(name){
   kittens.shift()
+  //.shift removes element from end of array
   return kittens
 }
 
@@ -35,4 +39,5 @@ function removeLastKitten(name){
 
 function removeFirstKitten(name){
   return kittens.slice(1)
+  return array
 }
